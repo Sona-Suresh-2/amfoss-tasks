@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Sona Suresh</h1>
 <h3 align="center">I literally loves doing programming especially in the field of Web-Development....</h3>
+<img align="right"alt="coding"width="400"src="https://user-images.githubusercontent.com/121611812/210841512-7d73c2ac-f30b-4cfa-b67a-5a308027bd08.png">
 
 - 🌱 I’m currently learning **Web-Development**
 
