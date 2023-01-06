@@ -1,0 +1,42 @@
+import telegram.ext
+
+
+Token = "5911411574:AAFp0MxGiKyQMBJnfZ4HnszEMEbzTPcfYj0"
+
+updater = telegram.ext.updater("5911411574:AAFp0MxGiKyQMBJnfZ4HnszEMEbzTPcfYj0", use_context=True)
+dispatcher = updater.dispatcher
+
+def start(update,context):
+    update.message.reply_text("Hello!!!!!Welcome to this amazing CineBot!!")
+
+def help(update,context):
+    update.message.reply_text(
+    """
+    /start -> Welcome to the Movie Watchlist
+    /help -> This particular message
+    /content -> About Title, Year of Release, and IMDb Rating of each movie
+    /Title -> Avatar: The Way of Water
+    /Year_of_Release -> 16 December 2022
+    /IMDb_Rating -> 7.9/10
+    """
+    )
+
+    def content(update, context):
+        update.message.reply_text("We have various more movies on the playlist available")
+
+    def Title(update, context):
+        update.message.reply_text("The link for the trailer: https://youtu.be/o5F8MOz_IDw")
+
+    def Year_of_Release(update, context):
+        update.message.reply_text("The link for the trailer: https://youtu.be/o5F8MOz_IDw")
+
+    def IMDb_Rating(update, context):
+        update.message.reply_text("The link for the trailer: https://youtu.be/o5F8MOz_IDw")
+
+    dispatcher.add_handler(telegram.ext.CommandHandler('start',start))
+    dispatcher.add_handler(telegram.ext.CommandHandler('Title',Title))
+    dispatcher.add_handler(telegram.ext.CommandHandler('Year_of_Release',Year_of_Release))
+    dispatcher.add_handler(telegram.ext.CommandHandler('IMDb_Rating',IMDb_Rating))
+    
+    updater.start_polling()
+    updater.idle()
