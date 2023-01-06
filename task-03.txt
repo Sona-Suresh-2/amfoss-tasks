@@ -1,0 +1,98 @@
+LOSING STREAK:
+
+# Funds reach exactly a certain number:
+x= 5000
+
+if x is True:
+    print("His lucky phase has begun.")
+else:
+    print("Nop")
+
+THE WORST DAY TO MISS SCHOOL:
+
+n = int(input("Enter number of Ubers: "))
+# Number of Students:
+m=6
+if m%n == 0:
+    print("Ubers are not expensive")
+else:
+    print("It's expensive")
+
+SHRINK TO WIN:
+
+# Number of envelops:
+
+def getSum(x):
+    sum = 0
+    for i in int(x):
+        sum += int (i)
+    return sum
+x = 999
+print(getSum(x))
+
+MONEY TROUBLE:
+
+# Amount of Savings in his account:
+n = 2000
+# Number of mens :
+m = 4
+# Dividing the money to men:
+if n%m == 0:
+    print("Good Ending!!")
+else:
+    print("Bad Ending!!")
+
+WATER TANK BLUES:
+
+a = int(input("Enter the litres of water in tank a."))
+b = int(input("Enter the litres of water in tank b."))
+if a is True:
+    print("b is burried deeper than a.")
+elif a==b:
+    print("The amount of water in both tanks are equal.")
+else:
+    print("a is burried deeper than b.")
+
+MONSTER SLAYER:
+
+t = int(input("Enter the number of monsters: "))
+t1 = int(input("Health of monster1: "))
+t2 = int(input("Health of monster2: "))
+if t1==True:
+    t2--
+    if t1>=0:
+        print("Debuff Spell activated.")
+    else:
+        print("Debuff Spell cannot be activated.")
+elif t2==True:
+    t1--
+    if t2>=0:
+        print("Debuff Spell is activated.")
+    else:
+        print("Debuff Spell cannot be activated. ")
+elif t2==False:
+    t1++
+    if t2>=0:
+        print("Debuff Spell is activated.")
+    else:
+        print("Debuff Spell cannot be activated. ")
+else:
+    t2++
+    if t1>=0:
+        print("Debuff Spell activated.")
+    else:
+        print("Debuff Spell cannot be activated.")
+    
+
+HERO TO ZERO:
+
+t = int(input("Enter the number of cities needed to be attacked: "))
+lh1 = int(input("Enter the level of hero 1: "))
+lh2 = int(input("Enter the level of hero 2: "))
+if lh1<lh2:
+    print("lh2 is debuffed to the low level of lh1.")
+elif lh1==lh2:
+    print("Any of the heroes gets debuffed to level zero.")
+else:
+    print("lh1 is debuffed to the low level of lh2.")
+
