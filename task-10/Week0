@@ -1,0 +1,55 @@
+print("Welcome To Nano Adventures!!")
+X = input(("Your name please: "))
+print("Hello "+ X + " Welcome to Nano Adventures!!")
+X = input("Would you like to start the game?? ")
+if X.lower() != "yes":
+    quit()
+else: print("Wohooo!! Let's Begin!!")
+X = input("As you move forward at this very dense forest you can see two ways which directs you to your home which is your destination, one way is the river and the other way is the mountain,Which one do you choose?? ")
+if X.lower() == "river":
+    X = input("As you cross the river there you see an alligator chasing you!! What you wanna do?? Wanna escape from the alligator or fight with alligator??")
+    if X.lower() == "escape":
+        X = input("You reached Mountain Valleys!!, Take two steps more to reach your destination!!Wanna step forward??")
+        if X.lower() == "yes":
+            print("Wohoo!! You reached your destination!!!!!")
+        else:
+            print("You lose the game!!")
+    elif X.lower() == "fight":
+        X = input("Oops you escaped and entered into a huge cave!! Now as you can see there are two ways right in front of you!! First way is the left way which leads you to the initial postion, the second way is gonna take you to the backside valley of your house. Now which way you choose!!First way which is towards right or Second way which is towards your left??")
+        if X.lower() == "first":
+            print("You reached to the initial position!!")
+        elif X.lower() == "second":
+            X = input("You reached to the backside valley of your house!! Now take two steps forward to reach your destination!!,Wanna Step Forward??")
+            if X.lower() == "yes":
+                 print("Reached your destination!!")
+            else:
+                print("You lose the game!!")
+                      
+    else:
+        print("Oops!! You lose the game!!")         
+elif X.lower() == "mountain":
+    X = input("You reached the mountain, now you can either climb the mountain or walk near to it!!What you choose to do ??")
+    if X.lower() == "climb":
+        X = input("You reached to the mountain top!! Now take the car and drive to your home!!Wanna take the car!!??")
+        if X.lower() == "yes":
+            print("Whohoooo!! You reached your destination!!")
+        else:
+            print("You lose the game!!")
+    elif X.lower() == "walk":
+        X = input("Now as you walk forward you can see a dog!! Either you need to fight with the dog to reach your destination or escape from the dog!! What you choose?? ")
+        if X.lower() == "fight":
+            X = input("Aww you fought and reached to the open house!! Now walk two steps more to reach your destination!! Wanna walk ahead??")
+            if X.lower() == "yes":
+                print("Wohooo you reached your destination!!")
+            else:
+                print("You lose the game!!")
+        elif X.lower() == "escape":
+            print("You escaped and reached your destination!!")
+        else:
+            print("You lose the game!!")
+    else:
+        print("You lose the game!!")
+else:
+    print("You lost the way!!")
+    
+    
