@@ -1,0 +1,22 @@
+extern crate reqwest;
+extern crate scrapper;
+
+use scarper::{html, Selector};
+
+fn main(){
+    println!("Heyy Rohan!!So here are the  information about the top 50 Cryptocurrency in the world: ");
+    scrape_crypto("https://crypto.com/price");
+}
+
+fn scrape_crypto(url:&str){
+    let mut req = reqwest::get(url).unwrap();
+    assert!(req.status().is_success());
+    let doc_body = Html::parse_document(&req.text().unwrap());
+
+    let team = Selector::parse(".spinner-icon"),unwrap();
+
+    for spin in doc_body.select(&spin){
+        let spin = spin.text().collext::Vec<_>>();
+    }
+    }
+}
